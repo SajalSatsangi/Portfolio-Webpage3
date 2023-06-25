@@ -1,327 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajal - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet">
-    <style>
-    *{
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajal - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
       margin: 0;
       padding: 0;
     }
-    body{
-      background-color: rgb(0,0,33);
+
+    body {
+      background-color: rgb(0, 0, 33);
       color: white;
       font-family: 'Poppins', sans-serif;
     }
 
-    nav{
+    nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 80px;
-      background-color: rgb(18,18,62);
+      background-color: rgb(18, 18, 62);
     }
 
-    nav ul{
+    nav ul {
       display: flex;
       justify-content: center;
     }
 
-    nav ul li{
+    nav ul li {
       list-style: none;
       font-size: 1.1rem;
       margin: 0 23px;
     }
 
-    nav ul li a{
+    nav ul li a {
       text-decoration: none;
       color: white;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
       color: rgb(153, 153, 226);
       font-size: 1.11rem;
     }
 
-    main hr{
+    main hr {
       border: 0;
       background: #9c97f1;
       height: 1.2px;
       margin: 60px 84px;
     }
 
-    .left{
+    .left {
       font-size: 1.7rem;
       margin: 0 135px;
     }
 
-    .firstSection{
+    .firstSection {
       display: flex;
       justify-content: space-around;
       margin: 50px 0;
       align-items: center;
     }
 
-    .firstSection > div{
+    .firstSection>div {
       width: 40%;
     }
 
-    .leftSection{
+    .leftSection {
       font-size: 2.6956rem;
       margin-left: 170px;
     }
 
-    .leftSection .buttons{
+    .leftSection .buttons {
       padding: 23px 0;
     }
 
-    .leftSection .btn{
+    .leftSection .btn {
       padding: 12px;
       background: #1e2167;
       color: white;
       border: 2px solid white;
       border-radius: 6px;
       font-size: 20px;
-      cursor: pointer; 
+      cursor: pointer;
     }
 
-    .rightSection img{
-      width: 80%;
+    .rightSection img {
+      width: 100%;
     }
 
-    .purple{
+    .purple {
       color: rgb(170, 107, 228);
     }
 
-    .text-gray{
+    .text-gray {
       color: gray;
     }
 
-    #element{
+    #element {
       color: rgb(170, 107, 228);
     }
 
-    .secondSection{
+    .secondSection {
       max-width: 80vw;
       margin: auto;
       height: 500px;
     }
 
-    .secondSection h1{
+    .secondSection h1 {
       font-size: 2rem;
     }
 
-    .secondSection .box{
+    .secondSection .box {
       background: white;
-      width: 77vw;
+      width: 80vw;
       height: 2px;
       margin: 56px 0;
       display: flex;
     }
 
-    .secondSection .vertical{
+    .secondSection .vertical {
       height: 93px;
       width: 1px;
       background-color: white;
-      margin: 0 80px;
+      margin: 0 6.1vw;
     }
 
-    .image-top{
+    .image-top {
       width: 23px;
       position: relative;
       top: -32px;
     }
 
-    .vertical-title{
+    .vertical-title {
       position: relative;
       top: 75px;
-      font-size: 15px;
-      width: 150px;
+      font-size: 12px;
+      width: 120px;
     }
 
-    .vertical-desc{
+    .vertical-desc {
       position: relative;
       top: 86px;
       color: gray;
-      width: 140px;
-      font-size: 9px;  
+      width: 120px;
+      font-size: 9px;
     }
 
-    footer{
+    footer {
       background-color: #0e0e1a;
     }
 
-    .footer{
+    .footer {
       display: flex;
       padding: 23px 122px;
       justify-content: space-evenly;
     }
 
-    .footer ul{
+    .footer ul {
       list-style: none;
       margin-left: 150px;
     }
 
-    .footer > div{
+    .footer>div {
       width: 223px;
     }
 
-    footer .footer-rights{
-      text-align: center; 
+    footer .footer-rights {
+      text-align: center;
       color: gray;
       padding: 12px 0;
     }
 
+    @media screen and (max-width: 1056px) {
+
+      .firstSection {
+        flex-direction: column-reverse;
+      }
+
+      .box {
+        flex-direction: column;
+      }
+
+      .secondSection .vertical {
+        height: unset;
+      }
+
+      .vertical-title,
+      .vertical-desc {
+        left: 45px;
+        top: 18px;
+      }
+
+      .secondSection .box {
+        width: 50vw;
+      }
+
+      nav {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 18px;
+      }
+
+      body {
+        min-width: fit-content;
+      }
+
+      .leftSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        text-align: center;
+        width: 100% !important;
+      }
+
+      .rightSection {
+        width: 411px !important;
+      }
+
+      .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1160px;
+      }
+
+      .image-top {
+        top: 50px;
+        left: -10px;
+      }
+
+      .secondSection h1 {
+        width: 275.36px;
+      }
+
+      .left {
+        margin-bottom: auto;
+      }
+    }
   </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left">Sajal's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+</head>
 
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi, My name is <span class="purple">Sajal</span>
-          <div>and I am a passionate</div>
-          <span id="element"></span>
-          <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn">Visit Github</button>
-          </div>
-        </div>
-        <div class="rightSection">
-          <img src="images/bg.webp" alt>
-        </div>
-      </section>
-      <hr>
+<body>
+  <header>
+    <nav>
+      <div class="left">Sajal's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <section class="secondSection">
-        <span class="text-gray"> What I have done so far</span>
-        <h1>Work Experience</h1>
-
-        <div class="box">
-          <div class="vertical">
-            <img src="images/developer1.webp" alt="" class="image-top">
-            <div class="vertical-title">
-              Html Developer (2010 - 2012)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          <div class="vertical">
-            <img src="images/instagram.png" alt="" class="image-top">
-            <div class="vertical-title">
-              Node.js Developer (2012 - 2014)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          <div class="vertical">
-            <img src="images/facebook.png" alt="" class="image-top">
-            <div class="vertical-title">
-              Html Developer (2014 - 2015)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          <div class="vertical">
-            <img src="images/twitter.png" alt="" class="image-top">
-            <div class="vertical-title">
-              Html Developer (2015 - 2016)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          <div class="vertical">
-            <img src="images/github.png" alt="" class="image-top">
-            <div class="vertical-title">
-              Html Developer (2016 - 2017)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          <div class="vertical">
-            <img src="images/youtube.png" alt="" class="image-top">
-            <div class="vertical-title">
-              Software Developer (2017 - 2023)
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere eligendi officia aut similique, amet esse error voluptas alias!
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer">
-        <div class="footer-first">
-          <h3>Sajal's Developer Portfolio</h3>
-        </div>
-        <div class="footer-second">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="footer-fourth">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <div>Hi, My name is <span class="purple">Sajal</span></div>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="https://drive.google.com/uc?id=1_U_05929M2yrRiJql8sg1pVJ9I7f1Vkp&export=download"><button class="btn">Download Resume</button></a>
+          <a href="https://github.com/SajalSatsangi"><button class="btn">Visit Github</button></a>
         </div>
       </div>
-      <div class="footer-rights">
-        Copyright &copy; sajalportfolio.com | All rights reseved
+      <div class="rightSection">
+        <img src="images/bg.webp" alt>
       </div>
-    </footer>
+    </section>
+    <hr>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    
-    <!-- Setup and start animation -->
-    <script>
+    <section class="secondSection">
+      <span class="text-gray"> What I have done so far</span>
+      <h1>Work Experience</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img src="images/developer1.webp" alt="" class="image-top">
+          <div class="vertical-title">
+            Html Developer (2010 - 2012)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="images/instagram.png" alt="" class="image-top">
+          <div class="vertical-title">
+            Node.js Developer (2012 - 2014)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="images/facebook.png" alt="" class="image-top">
+          <div class="vertical-title">
+            Html Developer (2014 - 2015)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="images/twitter.png" alt="" class="image-top">
+          <div class="vertical-title">
+            Html Developer (2015 - 2016)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="images/github.png" alt="" class="image-top">
+          <div class="vertical-title">
+            Html Developer (2016 - 2017)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="images/youtube.png" alt="" class="image-top">
+          <div class="vertical-title">
+            Software Developer (2017 - 2023)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis reprehenderit suscipit quaerat facere
+            eligendi officia aut similique, amet esse error voluptas alias!
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Sajal's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright &copy; sajalportfolio.com | All rights reseved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation -->
+  <script>
     var typed = new Typed('#element', {
       strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
       typeSpeed: 50,
       loop: true,
     });
   </script>
-  </body>
+</body>
+
 </html>
